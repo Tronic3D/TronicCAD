@@ -1,0 +1,51 @@
+# The TronicCAD team server with its database and a proxy for TLS.
+# See docs/SELF_HOSTING.md. Settings come from the file .env beside this one.
+services:
+  db:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: troniccad
+      POSTGRES_DB: troniccad
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - db:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U troniccad -d troniccad"]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+
+  app:
+    build:
+      context: ../../..
+      dockerfile: services/cloud/selfhost/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://troniccad:${POSTGRES_PASSWORD}@db:5432/troniccad
+      TRONIC_ALLOW_REGISTRATION: ${TRONIC_ALLOW_REGISTRATION:-false}
+      TRONIC_QUOTA_BYTES: ${TRONIC_QUOTA_BYTES:-53687091200}
+    volumes:
+      - store:/data/store
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      TRONIC_HOST: ${TRONIC_HOST:-localhost}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+
+volumes:
+  db:
+  store:
+  caddy-data:

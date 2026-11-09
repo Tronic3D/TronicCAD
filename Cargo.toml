@@ -1,0 +1,50 @@
+[workspace]
+resolver = "2"
+members = ["crates/*", "services/*", "apps/desktop/src-tauri"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.89"
+license = "Apache-2.0"
+publish = false
+
+[workspace.dependencies]
+tronic-core = { path = "crates/tronic-core" }
+tronic-project = { path = "crates/tronic-project" }
+tronic-appdata = { path = "crates/tronic-appdata" }
+tronic-schematic = { path = "crates/tronic-schematic" }
+tronic-library = { path = "crates/tronic-library" }
+tronic-erc = { path = "crates/tronic-erc" }
+tronic-pcb = { path = "crates/tronic-pcb" }
+tronic-drc = { path = "crates/tronic-drc" }
+tronic-fab = { path = "crates/tronic-fab" }
+tronic-router = { path = "crates/tronic-router" }
+tronic-sim = { path = "crates/tronic-sim" }
+tronic-3d = { path = "crates/tronic-3d" }
+tronic-ai = { path = "crates/tronic-ai" }
+tronic-storage = { path = "crates/tronic-storage" }
+tronic-update = { path = "crates/tronic-update" }
+tronic-extensions = { path = "crates/tronic-extensions" }
+serde = { version = "1", features = ["derive", "rc"] }
+serde_json = { version = "1", features = ["raw_value"] }
+thiserror = "2"
+time = { version = "0.3", features = ["serde-well-known", "formatting", "parsing"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+sha2 = "0.11"
+tempfile = "3"
+rusqlite = { version = "0.41", features = ["bundled"] }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+unwrap_used = "warn"
+expect_used = "warn"
+panic = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"

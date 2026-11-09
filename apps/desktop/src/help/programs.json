@@ -1,0 +1,10 @@
+[
+  { "name": "Microsoft Edge WebView2 Runtime", "used": "windows", "license": "Microsoft Software License Terms", "url": "https://developer.microsoft.com/microsoft-edge/webview2/" },
+  { "name": "WebKitGTK, GTK", "used": "linux", "license": "LGPL-2.1-or-later", "url": "https://webkitgtk.org/" },
+  { "name": "NSIS", "used": "installer", "license": "zlib/libpng, bzip2, CPL-1.0", "url": "https://nsis.sourceforge.io/" },
+  { "name": "nsis_tauri_utils", "used": "installer", "license": "MIT OR Apache-2.0", "url": "https://github.com/tauri-apps/nsis-tauri-utils" },
+  { "name": "SQLite", "used": "builtin", "license": "Public Domain", "url": "https://www.sqlite.org/" },
+  { "name": "Ollama, LM Studio, llama.cpp", "used": "optional_ai", "license": "MIT", "url": "https://ollama.com/" },
+  { "name": "PostgreSQL", "used": "selfhost", "license": "PostgreSQL License", "url": "https://www.postgresql.org/" },
+  { "name": "Caddy", "used": "selfhost", "license": "Apache-2.0", "url": "https://caddyserver.com/" }
+]

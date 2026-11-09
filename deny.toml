@@ -1,0 +1,45 @@
+# Automated dependency policy. A failure here blocks a release (IP_COMPLIANCE.md).
+# Extending this allow list requires a documented review, not just an edit.
+
+[graph]
+all-features = false
+
+[licenses]
+# Our own crates are proprietary and never published.
+private = { ignore = true }
+confidence-threshold = 0.9
+unused-allowed-license = "allow"
+allow = [
+  "MIT",
+  "MIT-0",
+  "Apache-2.0",
+  "Apache-2.0 WITH LLVM-exception",
+  "BSD-2-Clause",
+  "BSD-3-Clause",
+  "ISC",
+  "Zlib",
+  "0BSD",
+  "CC0-1.0",
+  "Unlicense",
+  "BSL-1.0",
+  "Unicode-3.0",
+  "CDLA-Permissive-2.0",
+  # File-level copyleft: unmodified use is fine, changes to those files must be
+  # published. See IP_COMPLIANCE.md.
+  "MPL-2.0",
+]
+
+[bans]
+multiple-versions = "allow"
+wildcards = "deny"
+allow-wildcard-paths = true
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+
+[advisories]
+version = 2
+yanked = "deny"
+ignore = []

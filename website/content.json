@@ -1,0 +1,254 @@
+{
+  "de-DE": {
+    "dir": "de",
+    "name": "Deutsch",
+    "title": "TronicCAD: Elektronik-CAD für Schaltplan und Leiterplatte",
+    "description": "Elektronik-CAD mit Schaltplan, Leiterplatte, 3D, Simulation und KI-Assistent, das auch ohne Cloud funktioniert.",
+    "lead": "Vom Schaltplan zur Fertigung, auf Ihrem Rechner.",
+    "sub": "Elektronik-CAD mit Schaltplan, Leiterplatte, 3D-Ansicht und Simulation. Ihre Projekte bleiben lokale Dateien, Cloud und KI sind freiwillig.",
+    "status_title": "Noch nicht veröffentlicht",
+    "status": "TronicCAD ist in Entwicklung. Es gibt noch keinen öffentlichen Download. Die Aufnahmen stammen aus der aktuellen Entwicklungsfassung.",
+    "features_title": "Was es heute kann",
+    "features": [
+      [
+        "Schaltplan",
+        "Bauteile, Busse, mehrere Seiten, hierarchische Blöcke, ERC mit Markierung in der Zeichnung."
+      ],
+      [
+        "Leiterplatte",
+        "1 bis 8 Lagen, Kupferflächen, DRC, Abgleich mit dem Schaltplan und ein Autorouter, dessen Vorschlag Sie annehmen oder verwerfen."
+      ],
+      [
+        "Fertigungsdaten",
+        "Gerber, Bohrdaten und weitere Dateien, im Test gegen einen fremden Parser geprüft."
+      ],
+      [
+        "3D und Simulation",
+        "3D-Ansicht mit Kollisionsprüfung, Simulation von Gleichspannung, Wechselspannung und Zeitverlauf."
+      ],
+      [
+        "KI, wenn Sie wollen",
+        "Mit einem Modell auf Ihrem Rechner oder einem Anbieter Ihrer Wahl. Sie sehen vorher, was gesendet wird."
+      ],
+      [
+        "Ihre Daten",
+        "Lokal, in einem Ordner, auf dem eigenen Server oder bei einem Speicheranbieter. Nichts wird still überschrieben."
+      ],
+      [
+        "Teamarbeit",
+        "Fünf Rollen, Bereiche und Sperren, Audit-Protokoll. Selbst zu betreiben."
+      ],
+      [
+        "Vier Sprachen",
+        "Deutsch, Englisch, Chinesisch und Französisch."
+      ]
+    ],
+    "shots": [
+      "Leiterplatte mit Autorouter",
+      "Schaltplan",
+      "3D-Ansicht"
+    ],
+    "limits_title": "Was Sie wissen sollten",
+    "limits": [
+      "Pinbelegungen der mitgelieferten Bauteile sind nicht gegen Datenblätter geprüft. Prüfen Sie sie vor einer Fertigung.",
+      "Geprüft unter Windows 11. Unter Ubuntu in WSL gebaut und gestartet. macOS ist ungetestet.",
+      "Nicht unterstützt: STEP-Import, Echtzeit-Zusammenarbeit, Modelle für integrierte Schaltungen in der Simulation.",
+      "Es gab noch keine unabhängige Sicherheitsprüfung."
+    ],
+    "handbook": "Handbuch",
+    "home": "Start",
+    "third_party": "Fremdkomponenten",
+    "legal": "Impressum und Datenschutzerklärung fehlen noch. Diese Seite ist deshalb nicht zur Veröffentlichung freigegeben.",
+    "free_title": "Freie Software",
+    "free_text": "TronicCAD steht unter der Apache-Lizenz 2.0. Alle Funktionen sind für alle frei nutzbar, ohne Aktivierung und ohne Konto. Eigene Werkzeuge lassen sich als Erweiterungen ergänzen. Die verwendeten Fremdkomponenten und ihre Lizenzen nennt die Anwendung unter Hilfe."
+  },
+  "en-US": {
+    "dir": "en",
+    "name": "English",
+    "title": "TronicCAD: electronics CAD for schematics and circuit boards",
+    "description": "Electronics CAD with schematics, circuit boards, 3D, simulation and an AI assistant that also works without a cloud.",
+    "lead": "From schematic to manufacturing, on your computer.",
+    "sub": "Electronics CAD with schematics, circuit boards, a 3D view and simulation. Your projects stay local files, and cloud and AI are optional.",
+    "status_title": "Not released yet",
+    "status": "TronicCAD is in development. There is no public download yet. The pictures come from the current development build.",
+    "features_title": "What it can do today",
+    "features": [
+      [
+        "Schematic",
+        "Parts, buses, several sheets, hierarchical blocks, ERC with markers in the drawing."
+      ],
+      [
+        "Circuit board",
+        "1 to 8 layers, copper areas, DRC, comparison with the schematic, and an autorouter whose proposal you accept or discard."
+      ],
+      [
+        "Manufacturing data",
+        "Gerber, drill data and more, checked in tests against a third-party parser."
+      ],
+      [
+        "3D and simulation",
+        "3D view with collision check, simulation of DC, AC and the course over time."
+      ],
+      [
+        "AI, if you want it",
+        "With a model on your computer or a provider of your choice. You see beforehand what is sent."
+      ],
+      [
+        "Your data",
+        "Local, in a folder, on your own server or with a storage provider. Nothing is silently overwritten."
+      ],
+      [
+        "Teamwork",
+        "Five roles, areas and locks, audit log. You can run it yourself."
+      ],
+      [
+        "Four languages",
+        "German, English, Chinese and French."
+      ]
+    ],
+    "shots": [
+      "Circuit board with autorouter",
+      "Schematic",
+      "3D view"
+    ],
+    "limits_title": "What you should know",
+    "limits": [
+      "Pin assignments of the included parts have not been checked against datasheets. Check them before manufacturing.",
+      "Tested on Windows 11. Built and started on Ubuntu in WSL. macOS is untested.",
+      "Not supported: STEP import, real-time collaboration, models for integrated circuits in the simulation.",
+      "There has been no independent security review yet."
+    ],
+    "handbook": "Handbook",
+    "home": "Home",
+    "third_party": "Third-party components",
+    "legal": "Legal notice and privacy policy are still missing. This page is therefore not cleared for publication.",
+    "free_title": "Free software",
+    "free_text": "TronicCAD is under the Apache License 2.0. All features are free for everyone, without activation and without an account. Your own tools can be added as extensions. The application lists the third-party components used and their licenses under Help."
+  },
+  "zh-CN": {
+    "dir": "zh",
+    "name": "简体中文",
+    "title": "TronicCAD：用于原理图和电路板的电子 CAD",
+    "description": "电子 CAD，包含原理图、电路板、三维、仿真和 AI 助手，无需云也能工作。",
+    "lead": "从原理图到制造，都在您的计算机上。",
+    "sub": "电子 CAD，包含原理图、电路板、三维视图和仿真。您的项目始终是本地文件，云和 AI 均为可选。",
+    "status_title": "尚未发布",
+    "status": "TronicCAD 正在开发中。目前还没有公开下载。图片来自当前的开发版本。",
+    "features_title": "目前的功能",
+    "features": [
+      [
+        "原理图",
+        "元件、总线、多页、层次块，在图中标记的 ERC。"
+      ],
+      [
+        "电路板",
+        "1 到 8 层，铜区，DRC，与原理图比对，以及由您接受或放弃方案的自动布线器。"
+      ],
+      [
+        "制造数据",
+        "Gerber、钻孔数据等，已在测试中用第三方解析器检查。"
+      ],
+      [
+        "三维和仿真",
+        "带碰撞检查的三维视图，直流、交流和时域仿真。"
+      ],
+      [
+        "可选的 AI",
+        "使用您计算机上的模型或您选择的服务商。发送前您可以看到内容。"
+      ],
+      [
+        "您的数据",
+        "本地、文件夹、自有服务器或存储服务商。绝不会悄悄覆盖。"
+      ],
+      [
+        "团队协作",
+        "五种角色，区域和锁定，审计日志。可以自行运行。"
+      ],
+      [
+        "四种语言",
+        "德语、英语、中文和法语。"
+      ]
+    ],
+    "shots": [
+      "带自动布线的电路板",
+      "原理图",
+      "三维视图"
+    ],
+    "limits_title": "您应该了解的内容",
+    "limits": [
+      "随附元件的引脚分配未对照数据手册检查。请在制造前检查。",
+      "已在 Windows 11 上测试。已在 WSL 中的 Ubuntu 上构建并启动。macOS 未测试。",
+      "不支持：STEP 导入、实时协作、仿真中的集成电路模型。",
+      "尚未进行独立的安全审查。"
+    ],
+    "handbook": "手册",
+    "home": "首页",
+    "third_party": "第三方组件",
+    "legal": "法律声明和隐私政策尚未提供。因此本页面尚未获准发布。",
+    "free_title": "自由软件",
+    "free_text": "TronicCAD 基于 Apache 许可证 2.0。所有功能对所有人免费开放，无需激活，也无需账户。您可以将自己的工具作为扩展添加。应用程序在“帮助”中列出所用的第三方组件及其许可证。"
+  },
+  "fr-FR": {
+    "dir": "fr",
+    "name": "Français",
+    "title": "TronicCAD : CAO électronique pour schémas et circuits imprimés",
+    "description": "CAO électronique avec schéma, circuit imprimé, 3D, simulation et assistant IA, qui fonctionne aussi sans cloud.",
+    "lead": "Du schéma à la fabrication, sur votre ordinateur.",
+    "sub": "CAO électronique avec schéma, circuit imprimé, vue 3D et simulation. Vos projets restent des fichiers locaux, le cloud et l’IA sont facultatifs.",
+    "status_title": "Pas encore publié",
+    "status": "TronicCAD est en développement. Il n’y a pas encore de téléchargement public. Les images proviennent de la version de développement actuelle.",
+    "features_title": "Ce qu’il sait faire aujourd’hui",
+    "features": [
+      [
+        "Schéma",
+        "Composants, bus, plusieurs feuilles, blocs hiérarchiques, ERC avec marquage dans le dessin."
+      ],
+      [
+        "Circuit imprimé",
+        "1 à 8 couches, zones de cuivre, DRC, comparaison avec le schéma et un routeur automatique dont vous acceptez ou rejetez la proposition."
+      ],
+      [
+        "Données de fabrication",
+        "Gerber, perçage et autres fichiers, vérifiés en test par un analyseur tiers."
+      ],
+      [
+        "3D et simulation",
+        "Vue 3D avec contrôle des collisions, simulation du continu, de l’alternatif et de l’évolution temporelle."
+      ],
+      [
+        "L’IA, si vous le souhaitez",
+        "Avec un modèle sur votre ordinateur ou un fournisseur de votre choix. Vous voyez à l’avance ce qui est envoyé."
+      ],
+      [
+        "Vos données",
+        "En local, dans un dossier, sur votre propre serveur ou chez un fournisseur de stockage. Rien n’est écrasé en silence."
+      ],
+      [
+        "Travail d’équipe",
+        "Cinq rôles, domaines et verrous, journal d’audit. Vous pouvez l’exploiter vous-même."
+      ],
+      [
+        "Quatre langues",
+        "Allemand, anglais, chinois et français."
+      ]
+    ],
+    "shots": [
+      "Circuit imprimé avec routage automatique",
+      "Schéma",
+      "Vue 3D"
+    ],
+    "limits_title": "Ce que vous devez savoir",
+    "limits": [
+      "Les brochages des composants fournis n’ont pas été vérifiés par rapport aux fiches techniques. Vérifiez-les avant la fabrication.",
+      "Testé sous Windows 11. Compilé et démarré sous Ubuntu dans WSL. macOS n’a pas été testé.",
+      "Non pris en charge : import STEP, collaboration en temps réel, modèles de circuits intégrés dans la simulation.",
+      "Aucun audit de sécurité indépendant n’a encore eu lieu."
+    ],
+    "handbook": "Manuel",
+    "home": "Accueil",
+    "third_party": "Composants tiers",
+    "legal": "Les mentions légales et la politique de confidentialité manquent encore. Cette page n’est donc pas autorisée à la publication.",
+    "free_title": "Logiciel libre",
+    "free_text": "TronicCAD est sous licence Apache 2.0. Toutes les fonctions sont accessibles à tous, sans activation et sans compte. Vos propres outils peuvent être ajoutés sous forme d’extensions. L’application indique les composants tiers utilisés et leurs licences dans l’Aide."
+  }
+}

@@ -1,0 +1,25 @@
+[package]
+name = "tronic-project"
+description = "TronicCAD project file format, atomic storage and editing session."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-core.workspace = true
+tronic-schematic.workspace = true
+tronic-pcb.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+tempfile.workspace = true
+thiserror.workspace = true
+time.workspace = true
+
+[dev-dependencies]
+tronic-library.workspace = true
+
+[lints]
+workspace = true

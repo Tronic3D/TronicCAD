@@ -1,0 +1,20 @@
+[Unit]
+Description=TronicCAD team server
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+User=troniccad
+Group=troniccad
+EnvironmentFile=/etc/troniccad.env
+ExecStart=/usr/local/bin/tronic-cloud
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/troniccad
+
+[Install]
+WantedBy=multi-user.target

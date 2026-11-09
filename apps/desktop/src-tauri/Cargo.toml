@@ -1,0 +1,61 @@
+[package]
+name = "troniccad-desktop"
+description = "TronicCAD desktop application"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+name = "troniccad_desktop"
+crate-type = ["rlib"]
+
+[[bin]]
+name = "troniccad"
+path = "src/main.rs"
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tronic-project.workspace = true
+tronic-appdata.workspace = true
+tronic-core.workspace = true
+tronic-schematic.workspace = true
+tronic-library.workspace = true
+tronic-erc.workspace = true
+tronic-pcb.workspace = true
+tronic-drc.workspace = true
+tronic-fab.workspace = true
+tronic-router.workspace = true
+tronic-sim.workspace = true
+tronic-3d.workspace = true
+tronic-ai.workspace = true
+tronic-storage.workspace = true
+tronic-update.workspace = true
+tronic-extensions.workspace = true
+sha2.workspace = true
+sysinfo = { version = "0.37", default-features = false, features = ["system"] }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+time = { workspace = true, features = ["macros"] }
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+
+[target.'cfg(windows)'.dependencies]
+keyring = { version = "3", features = ["windows-native"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+keyring = { version = "3", features = ["apple-native"] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+keyring = { version = "3", features = ["sync-secret-service", "crypto-rust"] }
+
+[lints]
+workspace = true

@@ -1,0 +1,21 @@
+[package]
+name = "tronic-router"
+description = "Automatic routing of open connections on a board."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-pcb.workspace = true
+tronic-drc.workspace = true
+tronic-schematic.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tronic-library.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,20 @@
+[package]
+name = "tronic-3d"
+description = "3D scene of a board, model import and mechanical checks."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-pcb.workspace = true
+tronic-schematic.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tronic-library.workspace = true
+
+[lints]
+workspace = true

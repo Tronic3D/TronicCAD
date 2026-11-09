@@ -1,0 +1,18 @@
+[package]
+name = "tronic-library"
+description = "TronicCAD's own component library and the library file format."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-schematic.workspace = true
+tronic-pcb.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true

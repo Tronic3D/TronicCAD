@@ -1,0 +1,21 @@
+[package]
+name = "tronic-storage"
+description = "Exchangeable storage providers, versioned synchronization and backups."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+time = { workspace = true, features = ["macros"] }
+sha2 = "0.10"
+hmac = "0.12"
+ureq = { version = "3", features = ["platform-verifier"] }
+url = "2"
+
+[lints]
+workspace = true

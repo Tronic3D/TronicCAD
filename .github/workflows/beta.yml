@@ -1,0 +1,52 @@
+name: Beta package
+
+# Started by hand only. Builds the packages for testers and keeps them with the run.
+# Publishes nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      label:
+        description: Name of the beta, for example Beta 1
+        required: true
+      support:
+        description: Where testers report problems
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    name: Package (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - name: System libraries
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev librsvg2-dev libayatana-appindicator3-dev libssl-dev libxdo-dev
+      - run: npm ci
+        working-directory: apps/desktop
+      - name: Build the package
+        shell: bash
+        env:
+          LABEL: ${{ inputs.label }}
+          SUPPORT: ${{ inputs.support }}
+        run: |
+          if [ -n "$SUPPORT" ]; then
+            node scripts/build_beta.mjs --label "$LABEL" --support "$SUPPORT"
+          else
+            node scripts/build_beta.mjs --label "$LABEL"
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: beta-${{ matrix.os }}
+          path: dist-beta/
+          if-no-files-found: error
+          retention-days: 30

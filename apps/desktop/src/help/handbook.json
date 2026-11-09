@@ -1,0 +1,438 @@
+{
+  "de-DE": [
+    {
+      "id": "start",
+      "title": "Erste Schritte",
+      "text": [
+        "TronicCAD arbeitet mit Projektdateien mit der Endung .tronic. Sie können überall liegen, auch auf externen Festplatten und Netzlaufwerken.",
+        "Wählen Sie „Neu“, geben Sie einen Namen ein, wählen Sie den Speicherort und legen Sie das Projekt an. Links wechseln Sie zwischen den Modulen. Die Sprache stellen Sie oben rechts um."
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projekte und Sicherheit Ihrer Arbeit",
+      "text": [
+        "Beim Speichern bleibt die vorherige Fassung als Sicherungskopie erhalten. Hat sich die Datei von außen geändert, fragt TronicCAD nach, statt sie zu überschreiben.",
+        "Alle 30 Sekunden entsteht eine automatische Sicherung. Nach einem Absturz bietet das Programm beim nächsten Start an, die Arbeit wiederherzustellen."
+      ]
+    },
+    {
+      "id": "schematic",
+      "title": "Schaltplan",
+      "text": [
+        "Platzieren Sie Bauteile aus der Bibliothek und verbinden Sie sie mit Leitungen. Es gibt Busse, Netzlabel, mehrere Seiten und hierarchische Blöcke. Eigene Bauteile legen Sie in der Bibliothek an.",
+        "Die elektrische Regelprüfung (ERC) markiert Fehler direkt in der Zeichnung. **Pinbelegungen der mitgelieferten Bauteile sind nicht gegen Datenblätter geprüft. Prüfen Sie sie vor einer Fertigung selbst.**"
+      ]
+    },
+    {
+      "id": "pcb",
+      "title": "Leiterplatte",
+      "text": [
+        "Übernehmen Sie Bauteile aus dem Schaltplan, zeichnen Sie die Kontur, platzieren Sie Footprints und verlegen Sie Leiterbahnen, Vias und Kupferflächen mit 1 bis 8 Lagen. Luftlinien zeigen, was noch fehlt, Abweichungen zum Schaltplan werden gemeldet.",
+        "Die Entwurfsprüfung (DRC) meldet Verstöße gegen die Regeln. Der Autorouter macht einen Vorschlag, den Sie annehmen oder verwerfen. Er verlegt Versorgungsleitungen so schmal wie Signale, also bitte prüfen."
+      ]
+    },
+    {
+      "id": "fab",
+      "title": "Fertigungsdaten",
+      "text": [
+        "Die Ausgabe erzeugt Gerber- und Bohrdaten sowie weitere Fertigungsdateien in einem Ordner. Lassen Sie sie vor einer Bestellung von Ihrem Fertiger prüfen. Eine bestandene Prüfung beweist nicht, dass die Schaltung funktioniert."
+      ]
+    },
+    {
+      "id": "view3d",
+      "title": "3D-Ansicht",
+      "text": [
+        "Die 3D-Ansicht zeigt die Leiterplatte mit Bauteilen und prüft auf Kollisionen. Eigene Modelle importieren Sie als STL, OBJ oder WRL. STEP wird noch nicht unterstützt. Die eingebauten Bauteilkörper sind typische Formen, keine Herstellerzeichnungen."
+      ]
+    },
+    {
+      "id": "simulation",
+      "title": "Simulation",
+      "text": [
+        "Die Simulation rechnet Gleichspannung, Wechselspannung und zeitlichen Verlauf des Schaltplans. Bauteile ohne Modell, etwa integrierte Schaltungen, werden gemeldet und fehlen im Ergebnis. **Der Zeitschritt ist fest: Ist er zu groß, entsteht ein glattes, aber falsches Ergebnis.** Prüfen Sie wichtige Werte unabhängig."
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "KI-Assistent",
+      "text": [
+        "Der Assistent arbeitet mit einem Modell auf Ihrem Rechner oder mit einem Cloud-Anbieter Ihrer Wahl. Bevor etwas Ihren Rechner verlässt, sehen Sie, was gesendet wird, und stimmen zu.",
+        "Vorschläge werden erst nach Ihrer Prüfung übernommen. **KI kann Werte und Pinbelegungen erfinden.** Prüfen Sie alles. Die Regelprüfungen im Modul laufen auch ohne Modell."
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "Synchronisieren und Sichern",
+      "text": [
+        "Sie können einen Ordner, WebDAV, S3-kompatiblen Speicher oder einen TronicCAD-Server verbinden. Jeder gespeicherte Stand wird eine Version. Haben zwei Geräte gleichzeitig geändert, entscheiden Sie, was gilt: Es wird nie still überschrieben.",
+        "Daten liegen beim Anbieter unverschlüsselt. Alte Versionen werden nie gelöscht, der Speicherbedarf wächst also."
+      ]
+    },
+    {
+      "id": "team",
+      "title": "Teamarbeit",
+      "text": [
+        "Teams haben fünf Rollen: Administrator, Projektleiter, Entwickler, Mitarbeiter und Betrachter. Mitglieder kommen über Einladungscodes dazu, die Sie selbst weitergeben.",
+        "Bereiche lassen sich sperren. Änderungen in verschiedenen Bereichen werden zusammengeführt, und Abweichungen zwischen Schaltplan und Leiterplatte werden gemeldet, nicht verhindert. Einen eigenen Server beschreibt die Anleitung zum Selbsthosting."
+      ]
+    },
+    {
+      "id": "update",
+      "title": "Updates",
+      "text": [
+        "Das Programm sucht täglich nach Updates, was Sie unter „Updates“ abschalten können. Installiert wird nur auf Ihren Klick, und nur was korrekt signiert ist. Vor größeren Updates werden Einstellungen und bekannte Projektdateien gesichert.",
+        "Startet eine neue Fassung nicht, stellt sich die alte selbst wieder her. Auf Wunsch können Sie zur vorherigen Version zurück. Direkt installieren geht derzeit nur unter Windows."
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "Erweiterungen",
+      "text": [
+        "Eigene Werkzeuge ergänzen TronicCAD über einen Ordner je Erweiterung, in jeder Programmiersprache. Sie bekommen das geöffnete Projekt und geben Meldungen und Dateien zurück. Das Projekt ändern können sie nicht.",
+        "**Eine Erweiterung ist Programmcode mit Ihren Rechten.** Vertrauen Sie nur Erweiterungen, deren Herkunft Sie kennen. Ändert sich eine ihrer Dateien, müssen Sie erneut zustimmen."
+      ]
+    },
+    {
+      "id": "remove",
+      "title": "Deinstallieren und Ihre Daten",
+      "text": [
+        "Das Deinstallieren entfernt das Programm. Ihre Projektdateien und Einstellungen bleiben erhalten. Projekte liegen dort, wo Sie sie gespeichert haben."
+      ]
+    },
+    {
+      "id": "free",
+      "title": "Freie Software",
+      "text": [
+        "TronicCAD ist freie Software unter der Apache-Lizenz 2.0. Alle Funktionen stehen allen frei zur Verfügung, ohne Aktivierung und ohne Konto. Eingebaute Fremdkomponenten und ihre Lizenzen stehen unter „Fremdkomponenten“."
+      ]
+    }
+  ],
+  "en-US": [
+    {
+      "id": "start",
+      "title": "Getting started",
+      "text": [
+        "TronicCAD works with project files ending in .tronic. They can be anywhere, including external drives and network drives.",
+        "Choose “New”, enter a name, choose a location and create the project. On the left you switch between modules. The language is set at the top right."
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projects and the safety of your work",
+      "text": [
+        "When saving, the previous version stays as a backup copy. If the file changed from outside, TronicCAD asks instead of overwriting it.",
+        "An automatic backup is made every 30 seconds. After a crash, the program offers to restore your work at the next start."
+      ]
+    },
+    {
+      "id": "schematic",
+      "title": "Schematic",
+      "text": [
+        "Place parts from the library and connect them with wires. There are buses, net labels, several sheets and hierarchical blocks. You create your own parts in the library.",
+        "The electrical rule check (ERC) marks errors directly in the drawing. **Pin assignments of the included parts have not been checked against datasheets. Check them yourself before manufacturing.**"
+      ]
+    },
+    {
+      "id": "pcb",
+      "title": "Circuit board",
+      "text": [
+        "Take over parts from the schematic, draw the outline, place footprints and route tracks, vias and copper areas on 1 to 8 layers. Airwires show what is missing, and differences from the schematic are reported.",
+        "The design rule check (DRC) reports violations. The autorouter makes a proposal that you accept or discard. It routes power lines as narrow as signals, so please check."
+      ]
+    },
+    {
+      "id": "fab",
+      "title": "Manufacturing data",
+      "text": [
+        "The output creates Gerber and drill data and other manufacturing files in a folder. Have your manufacturer check them before ordering. A passed check is no proof of a working circuit."
+      ]
+    },
+    {
+      "id": "view3d",
+      "title": "3D view",
+      "text": [
+        "The 3D view shows the board with its parts and checks for collisions. You import your own models as STL, OBJ or WRL. STEP is not yet supported. The built-in part bodies are typical shapes, not manufacturer drawings."
+      ]
+    },
+    {
+      "id": "simulation",
+      "title": "Simulation",
+      "text": [
+        "The simulation calculates DC, AC and the course over time of the schematic. Parts without a model, such as integrated circuits, are reported and missing from the result. **The time step is fixed: if it is too large, the result is smooth but wrong.** Check important values independently."
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI assistant",
+      "text": [
+        "The assistant works with a model on your computer or with a cloud provider of your choice. Before anything leaves your computer, you see what is sent and agree.",
+        "Proposals are only taken over after your review. **AI can invent values and pin assignments.** Check everything. The rule checks in the module also run without a model."
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "Syncing and backup",
+      "text": [
+        "You can connect a folder, WebDAV, S3-compatible storage or a TronicCAD server. Every saved state becomes a version. If two devices changed something at once, you decide what applies: nothing is ever silently overwritten.",
+        "Data lies unencrypted at the provider. Old versions are never deleted, so the storage needed grows."
+      ]
+    },
+    {
+      "id": "team",
+      "title": "Teamwork",
+      "text": [
+        "Teams have five roles: administrator, project lead, developer, contributor and viewer. Members join through invitation codes that you pass on yourself.",
+        "Areas can be locked. Changes in different areas are merged, and differences between schematic and board are reported, not prevented. Running your own server is described in the self-hosting guide."
+      ]
+    },
+    {
+      "id": "update",
+      "title": "Updates",
+      "text": [
+        "The program looks for updates daily, which you can switch off under “Updates”. Installing happens only when you click, and only what is correctly signed. Before larger updates, settings and known project files are backed up.",
+        "If a new version does not start, the old one restores itself. You can go back to the previous version on request. Installing directly currently works only on Windows."
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "Extensions",
+      "text": [
+        "Your own tools extend TronicCAD through one folder per extension, in any programming language. They receive the open project and return messages and files. They cannot change the project.",
+        "**An extension is program code with your rights.** Trust only extensions whose origin you know. If one of its files changes, you must agree again."
+      ]
+    },
+    {
+      "id": "remove",
+      "title": "Uninstalling and your data",
+      "text": [
+        "Uninstalling removes the program. Your project files and settings stay. Projects are where you saved them."
+      ]
+    },
+    {
+      "id": "free",
+      "title": "Free software",
+      "text": [
+        "TronicCAD is free software under the Apache License 2.0. All features are free for everyone, without activation and without an account. Built-in third-party components and their licenses are listed under “Third-party components”."
+      ]
+    }
+  ],
+  "zh-CN": [
+    {
+      "id": "start",
+      "title": "入门",
+      "text": [
+        "TronicCAD 使用扩展名为 .tronic 的项目文件。它们可以位于任何位置，包括外部硬盘和网络驱动器。",
+        "选择“新建”，输入名称，选择位置并创建项目。在左侧切换模块。语言在右上角设置。"
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "项目和工作安全",
+      "text": [
+        "保存时，上一个版本会保留为备份副本。如果文件被外部更改，TronicCAD 会询问，而不是直接覆盖。",
+        "每 30 秒自动备份一次。崩溃后，程序会在下次启动时提供恢复工作。"
+      ]
+    },
+    {
+      "id": "schematic",
+      "title": "原理图",
+      "text": [
+        "从库中放置元件并用导线连接。支持总线、网络标签、多页和层次块。您可以在库中创建自己的元件。",
+        "电气规则检查（ERC）直接在图中标记错误。**随附元件的引脚分配未对照数据手册检查。请在制造前自行检查。**"
+      ]
+    },
+    {
+      "id": "pcb",
+      "title": "印制电路板",
+      "text": [
+        "从原理图导入元件，绘制外形，放置封装，并在 1 到 8 层上布置走线、过孔和铜区。飞线显示尚缺的连接，与原理图的差异会被报告。",
+        "设计规则检查（DRC）报告违规。自动布线器给出方案，由您接受或放弃。它把电源线布得和信号线一样窄，请检查。"
+      ]
+    },
+    {
+      "id": "fab",
+      "title": "制造数据",
+      "text": [
+        "输出功能在文件夹中生成 Gerber、钻孔数据和其他制造文件。订购前请让制造商检查。检查通过并不证明电路能正常工作。"
+      ]
+    },
+    {
+      "id": "view3d",
+      "title": "三维视图",
+      "text": [
+        "三维视图显示带元件的电路板并检查碰撞。您可以导入 STL、OBJ 或 WRL 格式的模型。尚不支持 STEP。内置元件外形为典型形状，并非制造商图纸。"
+      ]
+    },
+    {
+      "id": "simulation",
+      "title": "仿真",
+      "text": [
+        "仿真计算原理图的直流、交流和时域过程。没有模型的元件（如集成电路）会被报告，并且不在结果中。**时间步长是固定的：如果太大，结果会平滑但错误。**请独立核对重要数值。"
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI 助手",
+      "text": [
+        "助手使用您计算机上的模型或您选择的云服务商。在任何内容离开您的计算机之前，您都会看到发送的内容并表示同意。",
+        "建议只有在您审核后才会采用。**AI 可能编造数值和引脚分配。**请检查所有内容。模块中的规则检查无需模型也能运行。"
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "同步和备份",
+      "text": [
+        "您可以连接文件夹、WebDAV、S3 兼容存储或 TronicCAD 服务器。每个保存的状态都成为一个版本。如果两台设备同时更改，由您决定以哪个为准：绝不会悄悄覆盖。",
+        "数据以未加密的形式存放在服务商处。旧版本永远不会被删除，因此所需存储空间会增长。"
+      ]
+    },
+    {
+      "id": "team",
+      "title": "团队协作",
+      "text": [
+        "团队有五种角色：管理员、项目负责人、开发者、协作者和查看者。成员通过您自行传递的邀请码加入。",
+        "区域可以锁定。不同区域的更改会被合并，原理图和电路板之间的差异会被报告，但不会被阻止。自建服务器的方法见自托管指南。"
+      ]
+    },
+    {
+      "id": "update",
+      "title": "更新",
+      "text": [
+        "程序每天查找更新，您可以在“更新”中关闭。只有在您点击后才会安装，并且只安装签名正确的内容。较大更新之前，会备份设置和已知的项目文件。",
+        "如果新版本无法启动，旧版本会自行恢复。您也可以按需返回上一个版本。目前只有 Windows 支持直接安装。"
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "扩展",
+      "text": [
+        "您自己的工具可以通过每个扩展一个文件夹来扩展 TronicCAD，可使用任何编程语言。它们接收当前打开的项目，并返回消息和文件。它们不能更改项目。",
+        "**扩展是以您的权限运行的程序代码。**只信任来源明确的扩展。如果其文件发生变化，您必须重新同意。"
+      ]
+    },
+    {
+      "id": "remove",
+      "title": "卸载和您的数据",
+      "text": [
+        "卸载会移除程序。您的项目文件和设置会保留。项目位于您保存它们的位置。"
+      ]
+    },
+    {
+      "id": "free",
+      "title": "自由软件",
+      "text": [
+        "TronicCAD 是基于 Apache 许可证 2.0 的自由软件。所有功能对所有人免费开放，无需激活，也无需账户。内置第三方组件及其许可证列在“第三方组件”中。"
+      ]
+    }
+  ],
+  "fr-FR": [
+    {
+      "id": "start",
+      "title": "Premiers pas",
+      "text": [
+        "TronicCAD utilise des fichiers de projet avec l’extension .tronic. Ils peuvent se trouver n’importe où, y compris sur des disques externes et des lecteurs réseau.",
+        "Choisissez « Nouveau », saisissez un nom, choisissez l’emplacement et créez le projet. À gauche, vous passez d’un module à l’autre. La langue se règle en haut à droite."
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projets et sécurité de votre travail",
+      "text": [
+        "Lors de l’enregistrement, la version précédente reste comme copie de sauvegarde. Si le fichier a été modifié de l’extérieur, TronicCAD demande au lieu de l’écraser.",
+        "Une sauvegarde automatique est créée toutes les 30 secondes. Après un plantage, le programme propose de restaurer votre travail au prochain démarrage."
+      ]
+    },
+    {
+      "id": "schematic",
+      "title": "Schéma",
+      "text": [
+        "Placez des composants de la bibliothèque et reliez-les par des fils. Il existe des bus, des étiquettes de réseau, plusieurs feuilles et des blocs hiérarchiques. Vous créez vos propres composants dans la bibliothèque.",
+        "Le contrôle des règles électriques (ERC) marque les erreurs directement dans le dessin. **Les brochages des composants fournis n’ont pas été vérifiés par rapport aux fiches techniques. Vérifiez-les vous-même avant la fabrication.**"
+      ]
+    },
+    {
+      "id": "pcb",
+      "title": "Circuit imprimé",
+      "text": [
+        "Reprenez les composants du schéma, dessinez le contour, placez les empreintes et tracez pistes, vias et zones de cuivre sur 1 à 8 couches. Le chevelu montre ce qui manque, et les écarts avec le schéma sont signalés.",
+        "Le contrôle des règles de conception (DRC) signale les violations. Le routeur automatique fait une proposition que vous acceptez ou rejetez. Il trace les alimentations aussi étroites que les signaux : veuillez vérifier."
+      ]
+    },
+    {
+      "id": "fab",
+      "title": "Données de fabrication",
+      "text": [
+        "La sortie crée des fichiers Gerber, de perçage et d’autres fichiers de fabrication dans un dossier. Faites-les vérifier par votre fabricant avant de commander. Un contrôle réussi ne prouve pas que le circuit fonctionne."
+      ]
+    },
+    {
+      "id": "view3d",
+      "title": "Vue 3D",
+      "text": [
+        "La vue 3D montre la carte avec ses composants et vérifie les collisions. Vous importez vos propres modèles au format STL, OBJ ou WRL. STEP n’est pas encore pris en charge. Les corps de composants intégrés sont des formes typiques, pas des plans de fabricants."
+      ]
+    },
+    {
+      "id": "simulation",
+      "title": "Simulation",
+      "text": [
+        "La simulation calcule le continu, l’alternatif et l’évolution temporelle du schéma. Les composants sans modèle, comme les circuits intégrés, sont signalés et absents du résultat. **Le pas de temps est fixe : s’il est trop grand, le résultat est lisse mais faux.** Vérifiez les valeurs importantes de manière indépendante."
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "Assistant IA",
+      "text": [
+        "L’assistant utilise un modèle sur votre ordinateur ou un fournisseur cloud de votre choix. Avant que quoi que ce soit ne quitte votre ordinateur, vous voyez ce qui est envoyé et vous donnez votre accord.",
+        "Les propositions ne sont reprises qu’après votre vérification. **L’IA peut inventer des valeurs et des brochages.** Vérifiez tout. Les contrôles de règles du module fonctionnent aussi sans modèle."
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "Synchronisation et sauvegarde",
+      "text": [
+        "Vous pouvez connecter un dossier, WebDAV, un stockage compatible S3 ou un serveur TronicCAD. Chaque état enregistré devient une version. Si deux appareils ont modifié en même temps, c’est vous qui décidez : rien n’est jamais écrasé en silence.",
+        "Les données sont stockées non chiffrées chez le fournisseur. Les anciennes versions ne sont jamais supprimées, l’espace nécessaire augmente donc."
+      ]
+    },
+    {
+      "id": "team",
+      "title": "Travail d’équipe",
+      "text": [
+        "Les équipes ont cinq rôles : administrateur, chef de projet, développeur, collaborateur et lecteur. Les membres rejoignent l’équipe grâce à des codes d’invitation que vous transmettez vous-même.",
+        "Les domaines peuvent être verrouillés. Les modifications dans différents domaines sont fusionnées, et les écarts entre schéma et carte sont signalés, pas empêchés. Le guide d’auto-hébergement décrit l’exploitation de votre propre serveur."
+      ]
+    },
+    {
+      "id": "update",
+      "title": "Mises à jour",
+      "text": [
+        "Le programme recherche les mises à jour chaque jour, ce que vous pouvez désactiver sous « Mises à jour ». L’installation n’a lieu qu’après votre clic, et seulement pour ce qui est correctement signé. Avant les mises à jour importantes, les paramètres et les fichiers de projet connus sont sauvegardés.",
+        "Si une nouvelle version ne démarre pas, l’ancienne se rétablit d’elle-même. Vous pouvez revenir à la version précédente sur demande. L’installation directe ne fonctionne actuellement que sous Windows."
+      ]
+    },
+    {
+      "id": "extensions",
+      "title": "Extensions",
+      "text": [
+        "Vos propres outils étendent TronicCAD grâce à un dossier par extension, dans n’importe quel langage de programmation. Ils reçoivent le projet ouvert et renvoient des messages et des fichiers. Ils ne peuvent pas modifier le projet.",
+        "**Une extension est du code qui s’exécute avec vos droits.** Ne faites confiance qu’aux extensions dont vous connaissez l’origine. Si l’un de ses fichiers change, vous devez donner à nouveau votre accord."
+      ]
+    },
+    {
+      "id": "remove",
+      "title": "Désinstallation et vos données",
+      "text": [
+        "La désinstallation supprime le programme. Vos fichiers de projet et paramètres restent. Les projets se trouvent là où vous les avez enregistrés."
+      ]
+    },
+    {
+      "id": "free",
+      "title": "Logiciel libre",
+      "text": [
+        "TronicCAD est un logiciel libre sous licence Apache 2.0. Toutes les fonctions sont accessibles à tous, sans activation et sans compte. Les composants tiers intégrés et leurs licences figurent sous « Composants tiers »."
+      ]
+    }
+  ]
+}

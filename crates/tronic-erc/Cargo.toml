@@ -1,0 +1,18 @@
+[package]
+name = "tronic-erc"
+description = "Electrical rule check. Deterministic calculation, independent of any AI."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-schematic.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+tronic-library.workspace = true
+
+[lints]
+workspace = true

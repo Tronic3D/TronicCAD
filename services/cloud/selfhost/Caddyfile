@@ -1,0 +1,5 @@
+# For a public host name, remove "tls internal": Caddy then gets a certificate itself.
+{$TRONIC_HOST} {
+	tls internal
+	reverse_proxy app:8787
+}

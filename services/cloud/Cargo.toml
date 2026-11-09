@@ -1,0 +1,35 @@
+[package]
+name = "tronic-cloud"
+description = "The TronicCAD cloud service: accounts, shared storage and change events."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-storage.workspace = true
+tronic-project.workspace = true
+tronic-core.workspace = true
+tronic-schematic.workspace = true
+tronic-pcb.workspace = true
+time.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+axum = { version = "0.8", features = ["ws"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal", "sync", "time"] }
+tokio-postgres = { version = "0.7", features = ["with-uuid-1"] }
+deadpool-postgres = "0.14"
+futures-util = "0.3"
+uuid = { version = "1", features = ["serde", "v4"] }
+argon2 = "0.5"
+password-hash = { version = "0.5", features = ["getrandom"] }
+rand = "0.9"
+sha2 = "0.10"
+
+[dev-dependencies]
+ureq = "3"
+tokio-tungstenite = "0.27"
+
+[lints]
+workspace = true

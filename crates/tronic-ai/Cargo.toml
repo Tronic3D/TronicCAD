@@ -1,0 +1,24 @@
+[package]
+name = "tronic-ai"
+description = "AI providers, consent, change proposals and rule-based circuit analysis."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-schematic.workspace = true
+tronic-library.workspace = true
+tronic-pcb.workspace = true
+tronic-erc.workspace = true
+tronic-drc.workspace = true
+tronic-sim.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+ureq = "3"
+url = "2"
+
+[lints]
+workspace = true

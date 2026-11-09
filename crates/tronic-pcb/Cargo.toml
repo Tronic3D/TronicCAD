@@ -1,0 +1,20 @@
+[package]
+name = "tronic-pcb"
+description = "Circuit board model, commands, copper connectivity and zone filling."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-schematic.workspace = true
+i_overlay = "9"
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+
+[lints]
+workspace = true

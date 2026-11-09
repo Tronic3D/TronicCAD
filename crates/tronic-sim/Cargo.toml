@@ -1,0 +1,20 @@
+[package]
+name = "tronic-sim"
+description = "TronicCAD's own circuit simulator: modified nodal analysis with Newton iteration."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+tronic-schematic.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+tronic-library.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,24 @@
+[package]
+name = "tronic-update"
+description = "Signed update manifests and the checks before anything is installed."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "tronic-release"
+path = "src/bin/tronic_release.rs"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+sha2.workspace = true
+ed25519-dalek = { version = "2", default-features = false, features = ["std", "fast"] }
+getrandom = "0.3"
+time.workspace = true
+
+[lints]
+workspace = true

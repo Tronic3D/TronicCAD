@@ -1,0 +1,196 @@
+:root {
+  --bg: #0e1a1f;
+  --panel: #15252c;
+  --line: #2a3f48;
+  --text: #e8f0f2;
+  --muted: #9db2ba;
+  --accent: #35c9a5;
+  --warn: #e0a838;
+  font-family: system-ui, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  line-height: 1.55;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.wrap {
+  margin-inline: auto;
+  max-width: 1080px;
+  padding-inline: 24px;
+}
+
+header.top {
+  border-bottom: 1px solid var(--line);
+}
+
+header.top .wrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: space-between;
+  padding-block: 12px;
+}
+
+.brand {
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+nav.links a[aria-current] {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero {
+  padding-block: 56px 32px;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 18px;
+  margin: 0 0 24px;
+  max-width: 62ch;
+}
+
+.status {
+  background: var(--panel);
+  border-inline-start: 4px solid var(--warn);
+  border-radius: 4px;
+  margin: 0;
+  padding: 12px 16px;
+}
+
+.status strong {
+  display: block;
+}
+
+section {
+  padding-block: 28px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
+.shots {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 0;
+}
+
+.shots figure {
+  margin: 0;
+}
+
+.shots img {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.shots figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: start;
+}
+
+td.mark,
+th.mark {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.note {
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+.manual {
+  max-width: 72ch;
+  padding-block: 32px;
+}
+
+.manual h2 {
+  margin-top: 32px;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 28px;
+  padding-block: 20px;
+}
+
+footer p {
+  margin: 0 0 6px;
+}
